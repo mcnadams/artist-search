@@ -1,6 +1,15 @@
 import React from 'react';
-import Display  from '../containers/Display';
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom';
+import Search from '../containers/artist/Search';
+
 
 export default function App() {
-  return <Display />;
+  return (
+    <Router>
+      <Route path="/artists" component={Search} />
+    </Router>
+  );
 }
