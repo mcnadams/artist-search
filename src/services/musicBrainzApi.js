@@ -9,10 +9,17 @@ export const getArtists = (artist) => {
 export const getAlbums = (artistId) => {
   return fetch(`http://musicbrainz.org/ws/2/release?artist=${artistId}&fmt=json`)
     .then(res => res.json())
-    .then((results) => {
+    .then(results => {
       return results.releases;
+    })
+    .then(albums => {
+      albums.forEach(album => {
+        if(album['cover-art-archive'].front) {
+          album.image = `http://coverartarchive.org/release/${album.id}/front`;
+        } else {
+          album.image = 'https://loremflickr.com/320/240/music';
+        }
+      });
+      return albums;
     });
 };
-
-
-// http://musicbrainz.org/ws/2/artist?query=<SEARCH>&fmt=json&limit=25

@@ -14,12 +14,10 @@ export default class AlbumDisplay extends PureComponent {
   }
 
   componentDidMount() {
-    console.log('here', this.state.artistId);
     getAlbums(this.state.artistId)
       .then(albums => {
         this.setState({ albums });
-      })
-      .then(() => console.log('albums', this.state.albums));
+      });
   }
 
   render() {
