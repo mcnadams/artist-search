@@ -2,8 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Lyrics({ lyrics }) {
+  const lyricsP = lyrics.split('\n');
+  const lyricsParas = lyricsP.map((paragraph, i) => {
+    return (
+      <p key={i}>
+        {paragraph}
+      </p>
+    );
+  });
   return (
-    <div>{lyrics}</div>
+    <div>
+      {lyricsParas}
+    </div>
   );
 }
 
