@@ -17,7 +17,6 @@ export default class Search extends PureComponent {
       getArtists(this.state.artist)
         .then(artists => {
           this.setState({ artists });
-          console.log(this.state.artists);
         });
     }
 
