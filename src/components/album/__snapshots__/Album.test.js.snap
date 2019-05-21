@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Album renders renders Album 1`] = `
+<Fragment>
+  <Link
+    to="/album/lady/no"
+  >
+    <img
+      style={
+        Object {
+          "width": "200px",
+        }
+      }
+    />
+    <p>
+       (
+      yes
+      )
+    </p>
+  </Link>
+</Fragment>
+`;

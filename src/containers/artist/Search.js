@@ -12,23 +12,23 @@ export default class Search extends PureComponent {
     this.setState({ [target.name]: target.value });
   }
 
-    fetchArtists = (event) => {
-      event.preventDefault();
-      getArtists(this.state.artist)
-        .then(artists => {
-          this.setState({ artists });
-        });
-    }
+  fetchArtists = (event) => {
+    event.preventDefault();
+    getArtists(this.state.artist)
+      .then(artists => {
+        this.setState({ artists });
+      });
+  }
 
-    render() {
-      return (
-      <>
-        <form onSubmit={this.fetchArtists}>
-          <input type="text" name="artist" onChange={this.handleChange}></input>
-          <button>Search</button>
-        </form>
-        <Artists artists={this.state.artists} />
-      </>
-      );
-    }
+  render() {
+    return (
+    <>
+      <form onSubmit={this.fetchArtists}>
+        <input type="text" name="artist" onChange={this.handleChange}></input>
+        <button>Search</button>
+      </form>
+      <Artists artists={this.state.artists} />
+    </>
+    );
+  }
 }
