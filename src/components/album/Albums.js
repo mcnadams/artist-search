@@ -21,3 +21,5 @@ function Albums({ albums }) {
 Albums.propTypes = {
   albums: PropTypes.array.isRequired
 };
+
+export default Albums;
