@@ -10,7 +10,8 @@ export default class AlbumDisplay extends PureComponent {
 
   state = {
     albums: [],
-    artistId: decodeURIComponent(this.props.match.params.id)
+    artistId: decodeURIComponent(this.props.match.params.id),
+    artist: decodeURIComponent(this.props.match.params.artist)
   }
 
   componentDidMount() {
@@ -22,7 +23,7 @@ export default class AlbumDisplay extends PureComponent {
 
   render() {
     return (
-      <Albums albums={this.state.albums} />
+      <Albums albums={this.state.albums} artist={this.state.artist} />
     );
   }
 }

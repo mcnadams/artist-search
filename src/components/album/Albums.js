@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Album from './Album';
 
-function Albums({ albums }) {
+function Albums({ albums, artist }) {
   const albumList = albums.map((album, i) => {
     return (
       <li key={i}>
-        <Album album={album} />
+        <Album album={album} artist={artist} />
       </li>
     );
   });
@@ -19,7 +19,8 @@ function Albums({ albums }) {
 }
 
 Albums.propTypes = {
-  albums: PropTypes.array.isRequired
+  albums: PropTypes.array.isRequired,
+  artist: PropTypes.string.isRequired
 };
 
 export default Albums;

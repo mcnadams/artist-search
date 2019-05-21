@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function Album({ album }) {
-  const path = `/album/${album.id}`;
+function Album({ album, artist }) {
+  const artistURI = encodeURIComponent(artist);
+  const path = `/album/${artistURI}/${album.id}`;
   const date = album.date.slice(0, 4);
   return (
     <>
@@ -16,7 +17,8 @@ function Album({ album }) {
 }
 
 Album.propTypes = {
-  album: PropTypes.object.isRequired
+  album: PropTypes.object.isRequired,
+  artist: PropTypes.string.isRequired
 };
 
 export default Album;

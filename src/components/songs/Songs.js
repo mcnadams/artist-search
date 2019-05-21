@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Song from './Song';
 
-function Songs({ songs }) {
+function Songs({ songs, artist }) {
   const songList = songs.map((song, i) => {
     return (
       <li key={i}>
-        <Song song={song} />
+        <Song song={song} artist={artist} />
       </li>
     );
   });
@@ -19,7 +19,8 @@ function Songs({ songs }) {
 }
 
 Songs.propTypes = {
-  songs: PropTypes.array.isRequired
+  songs: PropTypes.array.isRequired,
+  artist: PropTypes.string.isRequired
 };
 
 export default Songs;
