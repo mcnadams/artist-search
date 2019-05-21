@@ -9,7 +9,7 @@ exports[`App renders renders App 1`] = `
   />
   <Route
     component={[Function]}
-    path="/artist/:id"
+    path="/artist/:artist/:id"
   />
   <Route
     component={[Function]}
