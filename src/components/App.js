@@ -9,7 +9,7 @@ import Search from '../containers/artist/Search';
 export default function App() {
   return (
     <Router>
-      <Route path="/artists" component={Search} />
+      <Route path="/" component={Search} />
     </Router>
   );
 }
