@@ -1,9 +1,10 @@
-export const getArtists = (artist) => {
-  return fetch(`http://musicbrainz.org/ws/2/artist?query=${artist}&fmt=json&limit=25`)
+export const getArtists = (artist, page, perPage) => {
+  return fetch(`http://musicbrainz.org/ws/2/artist?query=${artist}&fmt=json&limit=${perPage}&offset=${(page - 1) * perPage }`)
     .then(res => res.json())
-    .then((results) => {
-      return results.artists;
-    });
+    .then((results) => ({
+      totalPages: Math.ceil(results.count / perPage),
+      artists: results.artists
+    }));
 };
 
 export const getAlbums = (artistId) => {
