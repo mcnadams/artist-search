@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Albums renders renders Albums 1`] = `
+exports[`Songs renders renders Songs 1`] = `
 <ul>
   <li
     key="0"
   >
-    <Album
-      album={
+    <Song
+      artist="lady"
+      song={
         Object {
           "date": "yes",
           "id": "no",
         }
       }
-      artist="lady"
     />
   </li>
 </ul>

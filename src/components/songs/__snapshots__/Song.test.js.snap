@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Song renders renders Song 1`] = `
+<Fragment>
+  <Link
+    to="/song/lady/undefined"
+  />
+</Fragment>
+`;

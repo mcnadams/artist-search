@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Artist renders renders Artist 1`] = `
+<Fragment>
+  <Link
+    to="/artist/lady/5"
+  >
+    lady
+  </Link>
+</Fragment>
+`;
