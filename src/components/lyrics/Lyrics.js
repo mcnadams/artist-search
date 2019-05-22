@@ -9,7 +9,7 @@ function Lyrics({ lyrics }) {
         {paragraph}
       </p>
     );
-  });
+  });  
   return (
     <div>
       {lyricsParas}

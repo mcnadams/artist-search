@@ -7,10 +7,12 @@ import Search from '../containers/artist/Search';
 import AlbumDisplay from '../containers/album/albumDisplay';
 import SongDisplay from '../containers/song/songDisplay';
 import LyricDisplay from '../containers/lyrics/lyricsDisplay';
+import Header from './banners/Header';
 
 export default function App() {
   return (
     <Router>
+      <Header />
       <Route exact path="/" component={Search} />
       <Route path="/artist/:artist/:id" component={AlbumDisplay} />
       <Route path="/album/:artist/:id" component={SongDisplay} />

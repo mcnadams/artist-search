@@ -2,6 +2,7 @@
 
 exports[`App renders renders App 1`] = `
 <BrowserRouter>
+  <Header />
   <Route
     component={[Function]}
     exact={true}
