@@ -6,12 +6,12 @@ body {
   background-image: url('../assets/reactartist.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: fixed;
+  background-attachment: fixed;
+  position: fixed;
 
   display: flex;
   justify-content: center;
   position: relative;
-}
-
-.textList {
-  background: white;
+  min-height: 100vh;
 }

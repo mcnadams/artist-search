@@ -1,0 +1,17 @@
+.Loader {
+  display: block;
+  margin: auto;
+  margin-top: 20vh;
+  width: 200px;
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -8,8 +8,8 @@ export default function Header() {
     color: 'black',
     background: '#faf200c8',
     borderRadius: '100%',
-    width: '75vw'
-
+    width: '75vw',
+    padding: '13px'
   };
   return (
     <Link to='/'>

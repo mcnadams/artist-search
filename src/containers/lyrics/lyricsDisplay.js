@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import Lyrics from '../../components/lyrics/Lyrics';
 import { getLyrics } from '../../services/lyricsApi';
 import PropTypes from 'prop-types';
+import Loader from '../../components/loader/Loader';
 
 export default class LyricsDisplay extends PureComponent {
   static propTypes = {
@@ -11,18 +12,20 @@ export default class LyricsDisplay extends PureComponent {
   state = {
     lyrics: '',
     artist: decodeURIComponent(this.props.match.params.artist),
-    title: decodeURIComponent(this.props.match.params.title)
+    title: decodeURIComponent(this.props.match.params.title),
+    loading: true
   }
 
   componentDidMount() {
-    console.log('title', this.state.title, 'artist', this.state.artist);
+    this.setState({ loading: true });
     getLyrics(this.state.artist, this.state.title)
       .then(lyrics => {
-        this.setState({ lyrics });
+        this.setState({ lyrics, loading: false });
       });
   }
 
   render() {
+    if(this.state.loading) return <Loader />;
     return (
       <Lyrics lyrics={this.state.lyrics} />
     );
