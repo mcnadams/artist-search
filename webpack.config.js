@@ -5,11 +5,13 @@ const CleanPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
+    // eslint-disable-next-line
+    path: __dirname + '/docs',
     filename: 'bundle.[hash].js',
     publicPath: '/'
   },
   devServer: {
-    
+
     port: 7878,
     historyApiFallback: true
   },
