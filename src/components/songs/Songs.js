@@ -12,7 +12,7 @@ function Songs({ songs, artist }) {
   });
 
   return (
-    <ul>
+    <ul style={{ background: 'white', listStyle: 'none', width: '15vw' }}>
       {songList}
     </ul>
   );

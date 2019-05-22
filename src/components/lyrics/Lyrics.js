@@ -11,7 +11,7 @@ function Lyrics({ lyrics }) {
     );
   });  
   return (
-    <div>
+    <div style={{ background: 'white', textAlign: 'center' }}>
       {lyricsParas}
     </div>
   );

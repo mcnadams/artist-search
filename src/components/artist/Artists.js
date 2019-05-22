@@ -13,7 +13,7 @@ function Artists({ artists }) {
   });
 
   return (
-    <ul>
+    <ul style={{ background: 'white', listStyle: 'none', width: '15vw' }}>
       {artistList}
     </ul>
   );

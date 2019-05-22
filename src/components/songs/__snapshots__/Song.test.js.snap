@@ -3,6 +3,13 @@
 exports[`Song renders renders Song 1`] = `
 <Fragment>
   <Link
+    style={
+      Object {
+        "color": "black",
+        "fontSize": "1em",
+        "padding": "5px",
+      }
+    }
     to="/song/lady/undefined"
   />
 </Fragment>

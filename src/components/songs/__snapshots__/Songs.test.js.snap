@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Songs renders renders Songs 1`] = `
-<ul>
+<ul
+  style={
+    Object {
+      "background": "white",
+      "listStyle": "none",
+      "width": "15vw",
+    }
+  }
+>
   <li
     key="0"
   >

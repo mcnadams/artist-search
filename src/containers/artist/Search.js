@@ -24,8 +24,8 @@ export default class Search extends PureComponent {
     return (
     <>
       <form onSubmit={this.fetchArtists}>
-        <input type="text" name="artist" onChange={this.handleChange}></input>
-        <button>Search</button>
+        <input type="text" name="artist" onChange={this.handleChange} style={{ fontSize: '1.5em', margin: '5px' }}></input>
+        <button style={{ fontSize: '1.5em', padding: '5px' }}>Search</button>
       </form>
       <Artists artists={this.state.artists} />
     </>

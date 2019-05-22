@@ -8,7 +8,7 @@ function Song({ song, artist }) {
   const path = `/song/${artistURI}/${songURI}`;
   return (
     <>
-      <Link to={path}>
+      <Link to={path} style={{ color: 'black', padding: '5px', fontSize: '1em' }}>
         {song.title}
       </Link>
     </>

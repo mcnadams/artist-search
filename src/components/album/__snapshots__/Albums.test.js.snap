@@ -1,9 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Albums renders renders Albums 1`] = `
-<ul>
+<ul
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexWrap": "wrap",
+      "justifyContent": "space-around",
+      "listStyle": "none",
+    }
+  }
+>
   <li
     key="0"
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "rgb(123, 247, 123)",
+        "border": "solid",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "height": "300px",
+        "justifyContent": "center",
+        "margin": "5px",
+        "textAlign": "center",
+        "width": "225px",
+      }
+    }
   >
     <Album
       album={

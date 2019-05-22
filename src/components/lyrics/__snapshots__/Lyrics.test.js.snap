@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Lyrics renders renders Lyrics 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "background": "white",
+      "textAlign": "center",
+    }
+  }
+>
   <p
     key="0"
   >

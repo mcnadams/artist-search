@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+}
+
+body {
+  background-image: url('../assets/reactartist.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.textList {
+  background: white;
+}
