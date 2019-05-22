@@ -5,6 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 // eslint-disable-next-line
 module.exports = {
   entry: './src/index.js',
+  
   output: {
     // eslint-disable-next-line
     path: __dirname + '/docs',
