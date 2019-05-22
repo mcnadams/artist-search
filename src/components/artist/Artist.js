@@ -7,7 +7,11 @@ function Artist({ artist }) {
   const path = `/artist/${nameURI}/${artist.id}`;
   return (
     <>
-      <Link to={path} style={{ color: 'black', padding: '5px', fontSize: '1em' }}>{artist.name}</Link>
+      <Link to={path} style={{ 
+        color: 'black', 
+        padding: '5px', 
+        fontSize: '1em' 
+      }}>{artist.name}</Link>
     </>
   );
 }
